@@ -1,17 +1,21 @@
 #include <stdio.h>
-int main (void) 
-{
-	int input, mod, sum;
+//Given an integer, write a program that sums the individual 
+//digits.
 
-	input = 2155;
-	printf("You entered %i. Adding ", input);
-	while ( input != 0) {
-	mod = input % 10;
-	input = input / 10;
-	sum += mod;
-	printf(" %i ", mod);
+int main (void) {
+
+	int num, sum, mod;
+
+	num = 2155;
+	printf("Sum of individual digits of %i is ", num); 
+	while ( num != 0 ) {
+		mod = num % 10;
+		num /= 10;
+		sum += mod;
 	}
-	printf(" = %i\n", sum);
 
+	printf("%i\n", sum);
+
+	
 	return 0;
 }
