@@ -6,15 +6,17 @@ int main (void) {
 
 	int num, sum, mod;
 
-	num = 2155;
-	printf("Sum of individual digits of %i is ", num); 
+	printf("Enter an unsigned integer: ");
+	scanf("%i", &num);
+	//num = 2155;
+	printf("Sum of individual digits of (decimal) %d (octal) %#o (hex) %#x is ", num, num, num); 
 	while ( num != 0 ) {
 		mod = num % 10;
 		num /= 10;
 		sum += mod;
 	}
 
-	printf("%i\n", sum);
+	printf("(decimal) %d (octal) %#o (hex) %#x\n", sum, sum, sum);
 
 	
 	return 0;
