@@ -3,7 +3,7 @@ int main (void)
 {
 	int input_number, reversed_number;
 	char set_sign;
-	set_sign = ' ';
+	set_sign = '\0';
 	printf ("Enter an integer→ ");
 	scanf ("%i", &input_number);
 
